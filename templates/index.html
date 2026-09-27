@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rapid7 CVE Reader</title><meta name="description" content="Review Rapid7 vulnerability articles and export their CVEs to Excel."><link rel="icon" href="/static/favicon.svg"><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script></head>
+<body><main>
+<header><div class="eyebrow">VULNERABILITY NEWS / RAPID7</div><h1>CVE Reader<span>01</span></h1><p>Review the latest articles. Take the CVEs into your workflow.</p></header>
+<section class="controls" aria-label="Scan controls"><div><h2>Vulnerabilities &amp; Exploits</h2><p>Scans articles linked on the category’s first page, including featured posts.</p><a href="https://www.rapid7.com/blog/category/vulnerabilities-and-exploits/" target="_blank" rel="noopener noreferrer">View source ↗</a></div><button id="scan">Scan Rapid7</button></section>
+<section class="status" aria-live="polite"><strong id="status">Ready to scan</strong><span id="updated">No scan yet</span><progress id="progress" max="100" value="0" hidden aria-label="Articles scanned"></progress></section>
+<section class="results"><div class="toolbar"><div><h2>Articles with CVEs <span id="count">0</span></h2><p id="summary">Only articles containing a CVE identifier appear here.</p></div><div class="actions"><label>Published on or after<input type="date" id="since"></label><button id="download" class="secondary" disabled>Download .xls</button></div></div>
+<div id="message" role="status"></div><details id="warnings" hidden><summary>Scan warnings — results may be incomplete</summary><ul></ul></details>
+<div class="table-wrap"><table><thead><tr><th>Published date</th><th>News heading</th><th>All CVEs</th><th>NVD CVSS score by CVE</th><th>Affected technology by CVE (NVD)</th></tr></thead><tbody id="rows"><tr><td colspan="5" class="empty">Run a scan to collect the latest CVE articles.</td></tr></tbody></table></div></section>
+<footer><span>Independent reader of public Rapid7 articles. Not affiliated with Rapid7.</span><span>Scans are shared and can refresh every 5 minutes.</span></footer>
+</main></body></html>
